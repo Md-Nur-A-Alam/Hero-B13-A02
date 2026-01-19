@@ -8,6 +8,7 @@
     --gradient-direction-bottom-left: to bottom left;
     --gradient-direction-top-right: to top right;
     --bg-color1:#1A0B2E;
+    --bg-color2:#230E3D;
     --font-color1:#fff;
     --font-color2:#00FF88;
 }
@@ -54,11 +55,11 @@
 /*  ==================== Header styles ====================  */
 
 /* navbar sytle */
-/* #nav-bar{
+#nav-bar{
     position: fixed;
     width: 100%;
     backdrop-filter: blur(45px);
-} */
+}
 .nav-bar-container{
     display: flex;
     justify-content: space-between;
@@ -131,9 +132,9 @@
 }
 
 /* about  */
-#about{
+/* #about{
     border: 1px solid;
-}
+} */
 .about-container{
     max-width: 1200px;
     width: 75%;
@@ -156,40 +157,75 @@
     /* border: 1px solid; */
     padding: 10px;
 }
+.about-container .box-container .box .title{
+    color: var(--font-color2);
+}
 .about-container .box-container .box .description{
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
+/* choose */
+#choose{
+    background-color: var(--bg-color2);
+    /* border: 1px solid; */
+}
+#choose .choose-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 75%;
+    padding: 120px 0;
+}
 #choose .choose-card{
+    width: 100%;
     display: grid;
     gap: 2rem;
-    grid-template-areas: "audio     mobile      mobile"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-areas: "audio     mobile      mobile"
                          "audio     community   community"
-                        "interview  interview   resouces";
+                        "interview  interview   resouces"; */
 }
 #audio{
-    grid-area: audio;
+    /* grid-area: audio; */
+    grid-row: span 2;
+    grid-column: span 1;
     border-radius: 40px;
-    border: 1px solid;
 }
 #mobile{
-    grid-area: mobile;
+    /* grid-area: mobile; */
+    grid-row: span 1;
+    grid-column: span 2;
     border-radius: 40px;
-    border: 1px solid;
 }
 #community{
-    grid-area: community;
+    /* grid-area: community; */
+    grid-row: span 1;
+    grid-column: span 2;
     border-radius: 40px;
-    border: 1px solid;
 }
 #interview{
-    grid-area: interview;
+    /* grid-area: interview; */
+    grid-row: span 1;
+    grid-column: span 2;
     border-radius: 40px;
-    border: 1px solid;
 }
 #resources{
-    grid-area: resouces;
+    /* grid-area: resouces; */
+    grid-row: span 1;
+    grid-column: span 1;
     border-radius: 40px;
-    border: 1px solid;
 }
-
+.card{
+    padding: 2.5rem 0 1rem 2.5rem;
+    background-color: rgba(53, 17, 101, 0.4);
+}
+.card img{
+    margin-bottom: 1.5rem;
+}
+.card h2{
+    font-size: 1.5rem;
+}
+.card p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
