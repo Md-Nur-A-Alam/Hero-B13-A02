@@ -9,6 +9,7 @@
     --gradient-direction-top-right: to top right;
     --bg-color1:#1A0B2E;
     --font-color1:#fff;
+    --font-color2:#00FF88;
 }
 .web-page {
   font-family: "Inter", sans-serif;
@@ -20,32 +21,44 @@
 }
 /* Share style */
 .btn{
+    justify-content: center;
+    gap: 8px;
     padding: 12px 20px;
-    background-image: linear-gradient(var(--gradient-direction-top-right),var(--color-first),var(--color-second),var(--color-third));
+    background: linear-gradient(var(--gradient-direction-top-right),var(--color-first),var(--color-second),var(--color-third));
     border-radius: 1000px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.btn-alt{
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: transparent;
+    border-radius: 1000px;
+    border: 1px solid var(--font-color2);
+    color: var(--font-color2);
+}
+.btn-alt img{
+    display: inline;
+    margin-right: 8px;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+}
+.description{
+    font-size: 1rem;
+    text-align: center;
+}
 
 /*  ==================== Header styles ====================  */
 
 /* navbar sytle */
-#nav-bar{
+/* #nav-bar{
     position: fixed;
     width: 100%;
     backdrop-filter: blur(45px);
-
-}
+} */
 .nav-bar-container{
     display: flex;
     justify-content: space-between;
@@ -76,17 +89,107 @@
 
 /* hero-section style */
 #banner{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     text-align: center;
     margin: 0 auto;
-    background-image: url(../assets/hero-bg.png);
+    background-image: url('../assets/hero-bg.png');
+    background-position: center center; 
     background-repeat: no-repeat;
+    background-size:cover;
+    /* height: 500px; */
 }
 #banner .mic{
+    position: relative;
+    width: 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 101px auto 40px;
+    /* border: 1px solid; */
 }
+#circle{
+    max-width: 350px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#microphone{
+    position: absolute;
+    z-index: 2;
+    height: 58%;
+    /* border: 1px solid; */
+}
+#banner .title{
+    font-size: 3.75rem;
+}
+#banner .buttons{
+    margin-top: 24px;
+    margin-bottom: 101px;
+    gap: 8px;
+}
+
+/* about  */
+#about{
+    border: 1px solid;
+}
+.about-container{
+    max-width: 1200px;
+    width: 75%;
+    /* border: 1px solid; */
+    margin: 0 auto;
+}
+
+.about-container hr{
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background-color: #1b1d74;
+}
+.about-container .box-container{
+    display: flex;
+    gap: 80px;
+}
+.about-container .box-container .box{
+    width: 240px;
+    /* border: 1px solid; */
+    padding: 10px;
+}
+.about-container .box-container .box .description{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+#choose .choose-card{
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "audio     mobile      mobile"
+                         "audio     community   community"
+                        "interview  interview   resouces";
+}
+#audio{
+    grid-area: audio;
+    border-radius: 40px;
+    border: 1px solid;
+}
+#mobile{
+    grid-area: mobile;
+    border-radius: 40px;
+    border: 1px solid;
+}
+#community{
+    grid-area: community;
+    border-radius: 40px;
+    border: 1px solid;
+}
+#interview{
+    grid-area: interview;
+    border-radius: 40px;
+    border: 1px solid;
+}
+#resources{
+    grid-area: resouces;
+    border-radius: 40px;
+    border: 1px solid;
+}
+
