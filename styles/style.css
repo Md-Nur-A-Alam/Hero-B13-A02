@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --color-first:#F7E93F;
+    --color-second:#FB09B4;
+    --color-third:#9100F8;
+    --gradient-direction-bottom: to bottom;
+    --gradient-direction-right: to right;
+    --gradient-direction-bottom-left: to bottom left;
+    --gradient-direction-top-right: to top right;
+    --bg-color1:#1A0B2E;
+    --font-color1:#fff;
+}
+.web-page {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-color1);
+  color: var(--font-color1);
+}
+/* Share style */
+.btn{
+    padding: 12px 20px;
+    background-image: linear-gradient(var(--gradient-direction-top-right),var(--color-first),var(--color-second),var(--color-third));
+    border-radius: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ==================== Header styles ====================  */
+
+/* navbar sytle */
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(45px);
+
+}
+.nav-bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+    padding: 24px 0;
+}
+#nav-bar .logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+#nav-bar .logo span{
+    background-image: linear-gradient(var(--gradient-direction-bottom),var(--color-first),var(--color-second),var(--color-third));
+    background-clip: text;
+    color: transparent;
+}
+#nav-bar .menu{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 1rem;
+}
+
+
+/* hero-section style */
+#banner{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+}
+#banner .mic{
+    display: flex;
+    justify-content: center;
+}
