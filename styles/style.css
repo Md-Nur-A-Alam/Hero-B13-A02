@@ -34,6 +34,7 @@
     background-position: 0% 50%;
     transition: transform .2s ease, box-shadow .02s ease, opacity .2s ease, background-position .4s ease;
     will-change: transform;
+    cursor: pointer;
 }
 
 .btn-alt {
@@ -44,6 +45,7 @@
     border-radius: 1000px;
     border: 1px solid var(--font-color2);
     color: var(--font-color2);
+    cursor: pointer;
     transition: transform .2s ease, box-shadow .02s ease, opacity .2s ease, background-position .4s ease;
     will-change: transform;
 }
