@@ -240,7 +240,8 @@
 #feature .feature-container{
     width: 75%;
     max-width: 1200;
-    margin: 8rem;
+    margin: 8rem auto;
+    /* border: 1px solid; */
 }
 #feature .feature-container .feature-cards{
     display: flex;
@@ -283,3 +284,51 @@
     /* border: 1px solid; */
     margin-top: 1rem;
 }
+
+
+/* Meed the host  */
+#host{
+    padding-top: 1rem;
+}
+#host .host-container{
+    padding: 3rem;
+    /* border: 1px solid; */
+    margin: 2.5rem auto 9rem;
+    max-width: 1200px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color2);
+    border-radius: 2rem;
+}
+.host-container .host-img{
+    max-width: 200px;
+    margin-right: 1.5rem;
+}
+.host-container h2{
+    font-size: 2rem;
+    text-align: left;
+}
+.host-container p{
+    text-align: left;
+}
+.host-container .social-medias{
+    display: flex;
+    gap: 1rem;
+}
+.host-container .social-medias .social-img{
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.social-img img{
+    width: 100px;
+}
+
+
