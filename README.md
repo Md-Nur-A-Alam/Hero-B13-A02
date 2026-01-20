@@ -140,7 +140,6 @@
 
 ## 📂 Submission Format
 
-- **GitHub Repository Link**
-- **Live Website Link (GitHub Pages)**
-
+- **GitHub Repository Link            : https://github.com/Md-Nur-A-Alam/Hero-B13-A02**
+- **Live Website Link (GitHub Pages)  : https://md-nur-a-alam.github.io/Hero-B13-A02/**
 ---
