@@ -70,12 +70,12 @@
     /* border: 1px solid; */
     padding: 24px 0;
 }
-#nav-bar .logo{
+#logo{
     font-size: 2rem;
     font-weight: 600;
     color: white;
 }
-#nav-bar .logo span{
+#logo span{
     background-image: linear-gradient(var(--gradient-direction-bottom),var(--color-first),var(--color-second),var(--color-third));
     background-clip: text;
     color: transparent;
@@ -110,6 +110,15 @@
     align-items: center;
     margin: 101px auto 40px;
     /* border: 1px solid; */
+}
+#banner .mic .badge{
+    padding: .5rem 1rem;
+    background-color: var(--font-color2);
+    border-radius: 100px;
+    position: absolute;
+    z-index: 3;
+    transform: translate3d(125px, -125px, 0)
+
 }
 #circle{
     max-width: 350px;
@@ -239,7 +248,7 @@
 /* featured episodes */
 #feature .feature-container{
     width: 75%;
-    max-width: 1200;
+    max-width: 1200px;
     margin: 8rem auto;
     /* border: 1px solid; */
 }
@@ -322,13 +331,58 @@
     width: 3rem;
     height: 3rem;
     padding: 10px;
-    border: 1px solid;
+    border: 1px solid #533C72;
     border-radius: 50%;
     display: flex;
     justify-content: center;
 }
 .social-img img{
-    width: 100px;
+    width: 20px;
+    height: 20px;
 }
 
 
+/* ============ footer ============ */
+#footer{
+    background: url('./../assets/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* border: 1px solid; */
+}
+#footer .footer-container{
+    max-width: 1360px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 120px 0;
+    /* border: 1px solid; */
+}
+#footer h2{
+    font-size: 5rem;
+    text-align: center;
+    /* border: 1px solid; */
+}
+#footer .apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    /* border: 1px solid; */
+}
+.apps .app{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+#footer .apps img{
+    margin: 0;
+    width: 1.5rem;
+}
+#footer .apps p{
+    margin: 0;
+}
+#footer .copyright{
+    margin-top: 3rem;
+    text-align: center;
+    /* border: 1px solid; */
+}
